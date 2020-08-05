@@ -51,7 +51,7 @@
                     <h2 class="title">ABOUT ME</h2>
                     <hr>
                 <p class="pre-wrap lead">Hi, I'm Brian. I'm a second-year computer science major at the University of California, Irvine. I have a passion for making projects that solve problems as completely and efficiently as possible. Right now, I'm most interested in machine learning architecture and applications. Understanding machine learning algorithms on both a fundamental and practical level is something I believe is crucial to building effective machine learning applications.
-While my main interests are in computer science, I have a deep appreciation for the mathematics that makes modern computing possible. One of my favorite YouTube channels is <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" class = "text-white">3Blue1Brown</a> for their beautiful and easy to understand presentations on an incredibly diverse range of mathematical topics.</p>
+While my main interests are in computer science, I have a deep appreciation for the mathematics that makes modern computing possible. One of my favorite YouTube channels is <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" class = "text-white" target="_blank">3Blue1Brown</a> for their beautiful and easy to understand presentations on an incredibly diverse range of mathematical topics.</p>
                 </div>
             </div>
         </div>
@@ -66,6 +66,19 @@ While my main interests are in computer science, I have a deep appreciation for 
         <!-- Portfolio Grid Items-->
         <div class="divider-custom row justify-content-center">
             <!-- Portfolio Items-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 332 210" class="img-fluid bg-light">
+                        <path fill="#222422" d="M 150 300 A 25 25 0 1 1 150 350 A 50 50 0 1 1 150 200 C 240 200 220 300 275 300 A 25 25 0 1 0 275
+                         250 A 25 25 0 1 1 275 200 A 50 50 0 1 1 275 350 C 185 350 205 250 150 250 A 25 25 0 1 0 150 300 Z"></path>
+                    </svg>
+                </div>
+                <h4 class="text-center">Millipede</h4>
+            </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -111,6 +124,43 @@ While my main interests are in computer science, I have a deep appreciation for 
     </div>
 </section>
 <!-- Portfolio Modal-->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+     aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+                    class="fas fa-times"></i></span></button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary mb-0">Millipede</h2>
+                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-3 divider-custom"
+                            src="assets/img/portfolio/millipede.png" alt="Millipede"/>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="divider">
+                                <a href="https://millipede-zhtmnkq7gq-uw.a.run.app/" class="text-white" target="_blank">Live Demo</a> ·
+                                <a href="https://brian-xu.github.io/millipede" class="text-white" target="_blank">Example Website</a>
+                                <hr/>
+                                Millipede is a tool to quickly generate static sites from unsegmented text. It uses an LSTM to
+                                identify shifts in sentence topic along with a Jinja template to create a presentable and readable
+                                website. As opposed to other artificially intelligent website builders, such as Wix
+                                ADI, which typically provide a customized template for a user to fill with their own content,
+                                Millipede accepts pre-written content and adapts it to a single website design. <br />
+                                Millipede's source repository, which includes accreditation for the model used, is available on
+                                <a href="https://github.com/brian-xu/millipede" class="text-white" target="_blank">GitHub.</a>
+                            </p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                    class="fas fa-times fa-fw"></i>Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
      aria-labelledby="#portfolioModal0Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -123,7 +173,7 @@ While my main interests are in computer science, I have a deep appreciation for 
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary mb-0">Wildfire Prediction</h2>
-                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5 divider-custom"
+                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-3 divider-custom"
                                                                 src="assets/img/portfolio/wildfire.png"
                                                                 alt="Wildfire Prediction"/>
                             <!-- Portfolio Modal - Text-->
@@ -158,7 +208,7 @@ While my main interests are in computer science, I have a deep appreciation for 
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary mb-0">Machine Learning Models in NumPy</h2>
-                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5 divider-custom"
+                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-3 divider-custom"
                                                                 src="assets/img/portfolio/linear.gif"
                                                                 alt="MatPlotLib Visualization"/>
                             <!-- Portfolio Modal - Text-->
@@ -168,7 +218,7 @@ While my main interests are in computer science, I have a deep appreciation for 
                                 <a href="https://archive.ics.uci.edu/ml/index.php" class="text-white" target="_blank">UCI Machine Learning Repository</a>)
                                 and has visualizations using MatPlotLib and Seaborn. <br />
                                 The source code, which includes examples of linear regression, logistic regression, and a simple neural network,
-                                is hosted on my <a href="https://github.com/brian-xu/machinelearning" class="text-white" target="_blank">GitHub.</a>
+                                is hosted on <a href="https://github.com/brian-xu/machinelearning" class="text-white" target="_blank">GitHub.</a>
                             </p>
                             <button class="btn btn-primary" href="#" data-dismiss="modal"><i
                                     class="fas fa-times fa-fw"></i>Close Window
@@ -192,7 +242,7 @@ While my main interests are in computer science, I have a deep appreciation for 
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary mb-0">Adventure Tools</h2>
-                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5 divider-custom"
+                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-3 divider-custom"
                                                                 src="assets/img/portfolio/adventure_tools.png"
                                                                 alt="Adventure Tools"/>
                             <!-- Portfolio Modal - Text-->
@@ -228,7 +278,7 @@ While my main interests are in computer science, I have a deep appreciation for 
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary mb-0">AI@UCI</h2>
-                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5 divider-custom"
+                            <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-3 divider-custom"
                                                                 src="assets/img/portfolio/AIatUCI.png" alt="AI@UCI"/>
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-5">Artificial Intelligence at University of California, Irvine is a student-run
