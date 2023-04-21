@@ -1,14 +1,13 @@
 /* style.css */
-
 :root {
   --text: #000;
-  --bg: #fff;
+  --bg: #fff
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #fff;
-    --bg: #000;
+    --bg: #000
   }
 }
 
@@ -16,50 +15,17 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: sans-serif;
+  height: 100%
 }
 
 a {
   color: var(--text);
-}
-
-a:active,
-a:hover {
-  outline: 0;
+  outline: 0
 }
 
 h1 {
   margin: .67em 0;
-  font-size: 2em;
-}
-
-.w-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.w-container:before,
-.w-container:after {
-  content: " ";
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-container:after {
-  clear: both;
-}
-
-.w-container .w-row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
+  font-size: 2em
 }
 
 body {
@@ -69,84 +35,78 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 20px
 }
 
 img {
   max-width: 100%;
   vertical-align: middle;
-  display: inline-block;
-}
-
-html.w-mod-touch * {
-  background-attachment: scroll !important;
+  display: inline-block
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 h1 {
   margin-top: 20px;
   font-size: 38px;
-  line-height: 44px;
+  line-height: 44px
 }
 
 h2 {
-  margin-top: 20px;
-  font-size: 32px;
-  line-height: 36px;
-}
-
-h3 {
-  margin-top: 20px;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-h4 {
   margin-top: 10px;
   font-size: 18px;
-  line-height: 24px;
-}
-
-h5 {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-h6 {
-  margin-top: 10px;
-  font-size: 12px;
-  line-height: 18px;
+  line-height: 24px
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 10px
+}
+
+
+.w-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.w-container:before,
+.w-container:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table
+}
+
+.w-container:after {
+  clear: both
+}
+
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+* {
+  box-sizing: border-box
 }
 
 .section-2 {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
-
 .container-2 {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex;
+  display: flex
 }
 
 .body {
@@ -158,80 +118,43 @@ p {
   grid-auto-columns: 1fr;
   margin-top: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  display: block;
+  display: block
 }
 
 .heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .heading-2 {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .paragraph {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
-#timeline {
-  position: relative;
-  display: table;
-  height: 100%
+.tg {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  padding: 5px 5px 0px 5px;
+  text-align: left;
+  vertical-align: top;
+}
+.tg td:not(:first-child) {
+  border-color: var(--text);
+  border-left: solid 1px;
 }
 
-#timeline div:after {
-  content: "";
-  width: 1px;
-  position: absolute;
-  top: 0.5rem;
-  bottom: 0rem;
-  left: 40px;
-  background: var(--text);
+.tg tr td p{
+  padding-left: 3px;
+  margin: 0px;
 }
 
-#timeline h3 {
-  margin: 0;
-  font-size: 1em;
-  font-weight: 400;
-}
-
-#timeline section.year section {
-  margin-top: -1.7em;
-  padding-bottom: 0px;
-}
-
-#timeline section.year section h4 {
-  position: absolute;
-  bottom: 0;
-  font-size: 0.9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0 0 0 60px;
-  color: var(--text);
-}
-
-@media (min-width: 62em) {
-  #timeline section.year section h4 {
-    font-size: 1em;
-  }
-}
-
-#timeline section.year section ul {
-  list-style-type: none;
-  padding: 0 0 0 50px;
-  margin: -1.35rem 0 1em;
-  font-size: 1em;
-}
-
-#timeline section.year:last-child section ul {
-  list-style-type: none;
-  padding: 0 0 0 50px;
-  margin: -1.35rem 0 0.1em;
-  font-size: 1em;
-}
-
-#timeline section.year section ul li:not(:first-child):before {
+.tg tr td p:not(:first-child):before {
   content: "· ";
 }
