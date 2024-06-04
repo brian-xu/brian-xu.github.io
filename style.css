@@ -160,3 +160,11 @@ p {
 .tg tr td p:not(:first-child):before {
   content: "· ";
 }
+
+@media screen and (max-width: 750px) {
+
+  img {
+    display: none;
+  }
+
+}
